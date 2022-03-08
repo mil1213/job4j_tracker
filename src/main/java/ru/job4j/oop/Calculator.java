@@ -4,7 +4,7 @@ public class Calculator {
 
     private static int x = 5;
 
-    public static int sum(int y){
+    public static int sum(int y) {
         return x + y;
     }
 
@@ -20,9 +20,8 @@ public class Calculator {
         return c / x;
     }
 
-    public int sumAllOperations (int d) {
-        Calculator calc = new Calculator();
-        return Calculator.sum(d) + calc.multiply(d) + Calculator.minus(d) + calc.devide(d);
+    public int sumAllOperations(int d) {
+        return sum(d) + multiply(d) + minus(d) + devide(d);
     }
 
     public static void main(String[] args) {
