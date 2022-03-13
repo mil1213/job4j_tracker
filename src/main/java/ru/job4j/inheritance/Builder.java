@@ -8,6 +8,4 @@ public class Builder extends Engineer {
         super(name, surname, education, birthday, college);
         this.project = project;
     }
-
-    
 }
