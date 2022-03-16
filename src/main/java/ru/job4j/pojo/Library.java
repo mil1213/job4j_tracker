@@ -26,7 +26,7 @@ public class Library {
         System.out.println("Find the book:");
         for (int i = 0; i < lib.length; i++) {
             Book b = lib[i];
-            if (b.getName() == "Clean code") {
+            if ("Clean code".equals(b.getName())) {
                 System.out.println(b.getName() + " - " + b.getNumberOfPages());
             }
         }
