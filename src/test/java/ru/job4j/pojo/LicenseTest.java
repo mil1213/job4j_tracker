@@ -5,6 +5,7 @@ import static org.hamcrest.Matchers.is;
 import org.junit.Test;
 
 public class LicenseTest {
+
     @Test
     public void eqName() {
         License first = new License();
@@ -13,5 +14,4 @@ public class LicenseTest {
         second.setCode("audio");
         assertThat(first, is(second));
     }
-
 }
