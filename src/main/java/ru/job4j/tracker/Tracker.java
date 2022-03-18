@@ -48,7 +48,6 @@ public class Tracker {
                 size1++;
             }
         }
-        rsl = Arrays.copyOf(rsl, size1);
-        return rsl;
+        return Arrays.copyOf(rsl, size1);
     }
 }
