@@ -8,4 +8,9 @@ public class Builder extends Engineer {
         super(name, surname, education, birthday, college);
         this.project = project;
     }
+
+    public String toDo() {
+        Project project = new Project("Bridge", "2000");
+        return project.showInfoProject();
+    }
 }
