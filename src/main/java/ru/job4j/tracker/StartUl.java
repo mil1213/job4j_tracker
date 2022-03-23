@@ -48,6 +48,16 @@ public class StartUl {
                 } else {
                     System.out.println("Item's delete error");
                 }
+            } else if (select == 4) {
+                System.out.println("=== Find item by id ===");
+                System.out.print("Enter id: ");
+                int id = Integer.parseInt(scanner.nextLine());
+                Item item = tracker.findById(id);
+                if (item != null) {
+                    System.out.println(item);
+                } else {
+                    System.out.println("Item with id = " + id + " is not found");
+                }
             }
             if (select == 6) {
                 run = false;
