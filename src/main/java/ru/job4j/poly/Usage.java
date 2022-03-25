@@ -10,7 +10,7 @@ public class Usage {
         for (Vehicle v : vehicles) {
             v.move();
             v.consist();
-            System.out.println();
+            System.out.println(" ");
         }
     }
 }
