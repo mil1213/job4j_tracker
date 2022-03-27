@@ -12,7 +12,7 @@ public class StartUlTest {
         Tracker tracker = new Tracker();
         StartUl.createItem(input, tracker);
         Item created = tracker.findAll()[0];
-        Item exp = new Item("Fix PC") ;
+        Item exp = new Item("Fix PC");
         assertEquals(created.getName(), (exp.getName()));
     }
 
