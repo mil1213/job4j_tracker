@@ -32,7 +32,7 @@ public class StartUlTest {
         Tracker tracker = new Tracker();
         Item item = new Item("new item");
         tracker.add(item);
-        String[] answers = {String.valueOf(item.getId()), String.valueOf(item.getName())};
+        String[] answers = {String.valueOf(item.getId())};
         StartUl.deleteItem(new StubInput(answers), tracker);
         Item deleted = tracker.findById(item.getId());
         assertNull(deleted);
