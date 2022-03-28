@@ -6,6 +6,6 @@ public class Square implements Shape {
         String ln = System.lineSeparator();
         return    "----" + ln
                 + "|  |" + ln
-                + "----"+ ln;
+                + "----" + ln;
     }
 }
