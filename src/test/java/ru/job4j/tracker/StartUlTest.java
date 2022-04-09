@@ -144,4 +144,20 @@ public class StartUlTest {
                 + "MENU:" + ln + "0. Find item by id" + ln + "1. Exit" + ln
         ));
     }
+
+    @Test
+    public void whenInvalidExit() {
+        Output out = new StubOutput();
+        Tracker tracker = new Tracker();
+        Input in = new StubInput(new String[]{"8", "0"});
+        UserAction[] actions = {new Exit()};
+        new StartUl(out).init(in, tracker, actions);
+        String ln = System.lineSeparator();
+        assertThat(out.toString(), is("MENU:" + ln
+                + "0. Exit" + ln
+                + "Wrong input, you can select: 0..0" + ln
+                + "MENU:" + ln
+                + "0. Exit" + ln
+        ));
+    }
 }
