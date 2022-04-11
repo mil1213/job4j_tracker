@@ -28,13 +28,11 @@ public class ValidateInputTest {
     public void whenInvalidInputTrueSeveralTimes() {
         Output out = new StubOutput();
         Input in = new StubInput(new String[] {"1", "4"});
-        int[] test = {1, 4};
-        int[] rsl = new int[test.length];
-        for (int i = 0; i < test.length; i++) {
-            ValidateInput input = new ValidateInput(out, in);
-            rsl[i] = input.askInt("Enter menu:");
-        }
-        assertThat(rsl, is(test));
+        ValidateInput input = new ValidateInput(out, in);
+        int selected1 = input.askInt("Enter menu:");
+        assertThat(selected1, is(1));
+        int selected2 = input.askInt("Enter menu:");
+        assertThat(selected2, is(4));
     }
 
     @Test
