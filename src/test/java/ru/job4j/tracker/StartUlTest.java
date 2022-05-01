@@ -8,8 +8,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
 public class StartUlTest {
-
-    @Test
+     @Test
      public void whenCreateItem() {
          Output out = new StubOutput();
          Input in = new StubInput(new String[]{"0", "Item name", "1"});
