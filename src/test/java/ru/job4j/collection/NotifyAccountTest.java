@@ -10,6 +10,7 @@ import static org.junit.Assert.*;
 import static org.hamcrest.core.Is.is;
 
 public class NotifyAccountTest {
+
     @Test
     public void sent() {
         List<Account> accounts = Arrays.asList(
