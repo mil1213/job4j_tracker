@@ -10,6 +10,7 @@ import static org.junit.Assert.*;
 import static org.hamcrest.core.Is.is;
 
 public class OrderConvertTest {
+
     @Test
     public void whenSingleOrder() {
         List<Order> orders = new ArrayList<>();
