@@ -20,7 +20,7 @@ public class Order {
         return "Order{"
                 + "number='" + number + '\''
                 + ", name='" + name + '\''
-                +'}';
+                + '}';
     }
 
     @Override
