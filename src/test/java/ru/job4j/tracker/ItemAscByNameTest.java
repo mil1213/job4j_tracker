@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
 import static org.hamcrest.core.Is.is;
 
 public class ItemAscByNameTest {
+
     @Test
     public void whenSortAsc() {
         List<Item> items = Arrays.asList(
@@ -20,7 +21,7 @@ public class ItemAscByNameTest {
                 new Item(4, "Boris")
         );
         List<Item> expected = Arrays.asList(
-                items.get(1), items.get(3),items.get(0), items.get(2));
+                items.get(1), items.get(3), items.get(0), items.get(2));
         Collections.sort(items, new ItemAscByName());
         assertThat(items, is(expected));
     }
@@ -34,7 +35,7 @@ public class ItemAscByNameTest {
                 new Item(4, "Boris")
         );
         List<Item> expected = Arrays.asList(
-                items.get(2), items.get(0),items.get(3), items.get(1));
+                items.get(2), items.get(0), items.get(3), items.get(1));
         Collections.sort(items, new ItemDescByName());
         assertThat(items, is(expected));
     }
