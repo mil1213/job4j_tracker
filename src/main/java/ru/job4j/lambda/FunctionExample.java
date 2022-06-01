@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Function;
 
 public class FunctionExample {
-    public List<Double> diapason(int start, int end, Function<Double,Double> func) {
+    public List<Double> diapason(int start, int end, Function<Double, Double> func) {
         List<Double> rsl = new ArrayList<>();
         for (int i = start; i < end; i++) {
             rsl.add(func.apply((double) i));
