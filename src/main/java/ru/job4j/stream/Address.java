@@ -15,7 +15,6 @@ public class Address {
         this.apartment = apartment;
     }
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) {
