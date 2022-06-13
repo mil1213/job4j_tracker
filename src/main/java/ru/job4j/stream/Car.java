@@ -15,8 +15,8 @@ public class Car {
                 + "brand='" + brand + '\''
                 + ", model='" + model + '\''
                 + ", created=" + created
-                + ", volume=" + volume +
-                ", color='" + color + '\''
+                + ", volume=" + volume
+                + ", color='" + color + '\''
                 + '}';
     }
 
