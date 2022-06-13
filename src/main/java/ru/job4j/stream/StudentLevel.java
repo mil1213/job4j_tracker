@@ -6,6 +6,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class StudentLevel {
+
     public static List<Student> levelOf(List<Student> students, int bound) {
         return students.stream()
                 .filter(Objects::nonNull)
