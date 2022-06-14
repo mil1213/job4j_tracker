@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 
 public class ListToMapTest {
 
-    /*@Test
+    @Test
     public void whenInputListNotHaveDuplicate() {
         List<Student> list = Arrays.asList(
                 new Student(30, "Ivanov"),
@@ -41,6 +41,6 @@ public class ListToMapTest {
         expected.put("Petrov", new Student(40, "Petrov"));
         expected.put("Sidorov", new Student(60, "Sidorov"));
         assertEquals(expected, result);
-    }*/
+    }
 
 }

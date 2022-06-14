@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
 public class SchoolTest {
-    /*@Test
+    @Test
     public void whenCollectClassA() {
         List<Student> students = List.of(
                 new Student(10, "Surname1"),
@@ -63,5 +63,5 @@ public class SchoolTest {
         expected.add(new Student(30, "Surname3"));
         expected.add(new Student(40, "Surname4"));
         assertThat(rsl, is(expected));
-    }*/
+    }
 }
