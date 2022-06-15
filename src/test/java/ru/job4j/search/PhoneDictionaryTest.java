@@ -9,17 +9,17 @@ import static org.hamcrest.core.Is.is;
 public class PhoneDictionaryTest {
     @Test
     public void whenFindByName() {
-        PhoneDictionary phones = new PhoneDictionary();
+        var phones = new PhoneDictionary();
         phones.add(new Person("Petr", "Arsentev", "534872", "Bryansk"));
-        ArrayList<Person> persons = phones.find("Pet");
+        var persons = phones.find("Pet");
         assertThat(persons.get(0).getSurname(), is("Arsentev"));
     }
 
     @Test
     public void whenNothingFound() {
-        PhoneDictionary phones = new PhoneDictionary();
+        var phones = new PhoneDictionary();
         phones.add(new Person("Petr", "Arsentev", "534872", "Bryansk"));
-        ArrayList<Person> persons = phones.find("451");
+        var persons = phones.find("451");
         assertTrue(persons.isEmpty());
     }
 }
