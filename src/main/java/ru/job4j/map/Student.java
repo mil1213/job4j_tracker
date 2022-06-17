@@ -4,7 +4,9 @@ import java.util.Objects;
 
 public class Student {
     private String name;
+
     private String account;
+
     private String group;
 
     public Student(String name, String account, String group) {
