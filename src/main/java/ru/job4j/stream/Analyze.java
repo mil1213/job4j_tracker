@@ -31,7 +31,7 @@ public class Analyze {
         return stream.map(n -> new Tuple(n.name(), n.subjects().stream()
                         .mapToInt(Subject::score)
                         .sum()))
-                .collect(Collectors.maxBy(Comparator.comparing(Tuple::score))).orElse(new Tuple("0", 0));
+                .collect(Collectors.maxBy(Comparator.comparing(Tuple::score))).orElse(null);
     }
 
     public static Tuple bestSubject(Stream<Pupil> stream) {
@@ -39,6 +39,6 @@ public class Analyze {
                 .collect(Collectors.groupingBy(Subject::name, Collectors.summingDouble(Subject::score)))
                 .entrySet().stream()
                 .map(t -> new Tuple(t.getKey(), t.getValue()))
-                .collect(Collectors.maxBy(Comparator.comparing(Tuple::score))).orElse(new Tuple("0", 0));
+                .collect(Collectors.maxBy(Comparator.comparing(Tuple::score))).orElse(null);
     }
 }
